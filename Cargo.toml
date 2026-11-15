@@ -1,0 +1,17 @@
+[package]
+name = "beacon-hunter"
+version = "0.1.0"
+edition = "2021"
+description = "NetFlow v9 / IPFIX collector with periodic beacon detection (std-only)"
+
+[lib]
+name = "beacon_hunter"
+path = "src/lib.rs"
+
+[[bin]]
+name = "beacon-hunter"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true

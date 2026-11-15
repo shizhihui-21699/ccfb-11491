@@ -16,3 +16,8 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+
+# Rust build output and local exports
+/target/
+beacons.json
+*.json.tmp
