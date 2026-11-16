@@ -1,0 +1,12 @@
+[package]
+name = "flowbeacon"
+version = "0.1.0"
+edition = "2021"
+description = "NetFlow v9 / IPFIX collector with beacon (C2 heartbeat) detection"
+
+[[bin]]
+name = "flowbeacon"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 2
